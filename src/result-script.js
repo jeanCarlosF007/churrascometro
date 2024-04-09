@@ -6,6 +6,7 @@ const tableIce = document.getElementById("ice");
 const tableSoda = document.getElementById("soda");
 const tableWater = document.getElementById("water");
 const tableBeer = document.getElementById("beer");
+const buttonHome = document.getElementById("btn-home");
 
 const calculateQuantity = () => {
   let meatKg = 0;
@@ -32,19 +33,23 @@ const calculateQuantity = () => {
   coalKg += totalOfPeople;
   saltKg += 0.04 * totalOfPeople;
   iceKg += 0.5 * totalOfPeople;
-  sodaBottle = 0.2 * totalOfPeople;
-  waterBottle = 0.2 * totalOfPeople;
+  sodaBottle = Math.ceil(0.2 * totalOfPeople);
+  waterBottle = Math.ceil(0.2 * totalOfPeople);
   beerBottle = 3 * drinkers;
 
-  tableMeat.innerText = meatKg + " Kg";
+  tableMeat.innerText = meatKg.toFixed(2) + " Kg";
   tableGarlicBread.innerText = garlicBread + " Un";
   tableCoal.innerText = coalKg + " Kg";
-  tableSalt.innerText = saltKg + " Kg";
+  tableSalt.innerText = saltKg.toFixed(2) + " Kg";
   tableIce.innerText = iceKg + " Kg";
   tableSoda.innerText = sodaBottle + " un";
   tableWater.innerText = waterBottle + " un";
   tableBeer.innerText = beerBottle + " un";
 
 }
-
 calculateQuantity();
+
+buttonHome.addEventListener("click", e => {
+  e.preventDefault();
+  window.location.href = "./index.html";
+})
