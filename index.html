@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <title>Churrascômetro</title>
+</head>
+
+<body>
+
+  <h1>Churrascômetro</h1>
+  <h2>Passe o ponto da carne, mas não passe vergonha</h2>
+  <p id="question">Já pensou se falta algo?!</p>
+
+  <form class="initial-fields">
+    <label for="user-name">Nome: </label>
+    <input type="text" name="user-name" id="user"><br>
+    <label for="user-mail">E-mail:</label>
+    <input type="email" name="user-mail" id="mail" required><br>
+    <label for="postal-code">CEP:</label>
+    <input type="number" name="postal-code" id="postal"> <br>
+    <label for="wants-to-receive-offers" id="label-offer">Aceito receber e-mails com promoções</label>
+    <input type="checkbox" name="wants-to-receive-offers" id="offers-receive" checked> <br>
+    <input type="button" value="Próximo" class="btn-next-page" id="btn-next-page">
+
+  </form>
+
+
+</body>
+<script src=" ./src/index-script.js" defer></script>
+
+
+</html>

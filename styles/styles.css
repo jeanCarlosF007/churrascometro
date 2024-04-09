@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Roboto:wght@300;400;700&family=Petit+Formal+Script&family=IBM+Plex+Mono:wght@400;600&display=swap');
+
+:root {
+  --white-color: #FFFFFF;
+  --primary-color: #061120;
+  --secondary-color: #0c1f3a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  background: var(--primary-color);
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: var(--white-color);
+  text-transform: uppercase;
+  font-size: 10rem;
+  margin-top: 6rem;
+}
+
+h2 {
+  color: var(--white-color);
+  display: flex;
+  justify-content: center;
+  font-size: 8rem;
+  margin-top: 2rem;
+}
+
+h3 {
+  color: var(--white-color);
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+  margin-top: 2rem;
+}
+
+#question {
+  color: var(--white-color);
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+  margin-top: 2rem;
+}
+
+.initial-fields {
+  color: var(--white-color);
+  background-color: aquamarine;
+  font-size: 5rem;
+  padding: 5rem;
+  margin: 10rem auto;
+  border-radius: 2rem;
+  width: 50%;
+}
+
+.initial-fields input {
+  margin: 1.5rem;
+  width: 60rem;
+  height: 5rem;
+  border-radius: .5rem;
+  font-size: 4rem;
+  border-radius: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+#postal {
+  width: 25rem;
+}
+
+#offers-receive {
+  width: 4rem;
+  height: 4rem;
+  margin: auto 0;
+}
+
+#btn-next-page {
+  background-color: rgb(90, 3, 3);
+  color: var(--white-color);
+  width: 20rem;
+  border-radius: .5rem;
+  font-size: 3rem;
+  margin-top: 5rem;
+  padding: 0;
+}
+
+#offers-receive {
+  width: 20rem;
+}
+
+.second-field {
+  color: var(--white-color);
+  background-color: aquamarine;
+  font-size: 3rem;
+  padding: 3rem;
+  margin: 10rem auto;
+  border-radius: 2rem;
+  width: 50%;
+}
+
+.second-field input {
+  margin: 1.5rem;
+  width: 9rem;
+  height: 4rem;
+  border-radius: .5rem;
+  font-size: 2.7rem;
+  border-radius: 1rem;
+  padding-left: 1.5rem;
+}
+
+#btn-last-page {
+  background-color: rgb(90, 3, 3);
+  color: var(--white-color);
+  width: 20rem;
+  border-radius: .5rem;
+  font-size: 2.5rem;
+  margin-top: 3.5rem;
+  padding: 0;
+}
+
+#table-with-quantity {
+  display: flex;
+  justify-content: center;
+  margin: 10rem 50rem;
+  border: .1rem solid var(--white-color);
+  border-color: var(--white-color);
+  color: var(--white-color);
+  font-size: 2.5rem;
+  padding: 1.5rem;
+  width: 50%
+}
+
+#table-with-quantity th,
+#table-with-quantity td {
+  padding: 1.5rem;
+  text-align: center;
+  margin: 0 auto;
+}
